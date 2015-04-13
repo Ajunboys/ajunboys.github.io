@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=device-dpi"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta http-equiv="pragma" content="no-cache"/>  
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate"/>  
+    <meta http-equiv="expires" content="0"/> 
+	<link rel="fluid-icon" href="http://ajunboys.github.io/fluidicon.png" title="Ajunboys">
+    <link rel="stylesheet" type="text/css" href="http://ajunboys.github.io/stylesheets/normalize.css" media="screen">
+    <link href='http://ajunboys.github.io/stylesheets/css.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://ajunboys.github.io/stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="http://ajunboys.github.io/stylesheets/github-light.css" media="screen">
+     <title>Java笔试题集锦</title>
+  </head>
+  <body>
+  	<section class="page-header">
+     <h3>Java笔试题集锦</h3>
+  	</section>
+    <section class="main-content">
+      <section class="details">
+      <p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>1.MVC<span style="background-color: inherit; font-family: 宋体;">的各个部分都有那些技术来实现</span>?<span style="background-color: inherit; font-family: 宋体;">如何实现</span>?</strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：</span>MVC<span style="background-color: inherit; font-family: 宋体;">是</span>Model<span style="background-color: inherit; font-family: 宋体;">－</span>View<span style="background-color: inherit; font-family: 宋体;">－</span>Controller<span style="background-color: inherit; font-family: 宋体;">的简写。</span>&quot;Model&quot;&nbsp;<span style="background-color: inherit; font-family: 宋体;">代表的是应用的业务逻辑（通过</span>JavaBean<span style="background-color: inherit; font-family: 宋体;">，</span>EJB<span style="background-color: inherit; font-family: 宋体;">组件实现），</span>&nbsp;&quot;View&quot;&nbsp;<span style="background-color: inherit; font-family: 宋体;">是应用的表示面（由</span>JSP<span style="background-color: inherit; font-family: 宋体;">页面产生），</span>&quot;Controller&quot;&nbsp;<span style="background-color: inherit; font-family: 宋体;">是提供应用的处理过程控制（一般是一个</span>Servlet<span style="background-color: inherit; font-family: 宋体;">），通过这种设计模型把应用逻辑，处理过程和显示逻辑分成不同的组件实现。这些组件可以进行交互和重用。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>2.J2EE<span style="background-color: inherit; font-family: 宋体;">是什么？</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：</span>Je22<span style="background-color: inherit; font-family: 宋体;">是</span>Sun<span style="background-color: inherit; font-family: 宋体;">公司提出的多层</span>(multi-diered),<span style="background-color: inherit; font-family: 宋体;">分布式</span>(distributed),<span style="background-color: inherit; font-family: 宋体;">基于组件</span>(component-base)<span style="background-color: inherit; font-family: 宋体;">的企业级应用模型</span>(enterpriese application model).<span style="background-color: inherit; font-family: 宋体;">在这样的一个应用系统中，可按照功能划分为不同的组件，这些组件又可在不同计算机上，并且处于相应的层次</span>(tier)<span style="background-color: inherit; font-family: 宋体;">中。所属层次包括客户层</span>(clietn tier)<span style="background-color: inherit; font-family: 宋体;">组件</span>,web<span style="background-color: inherit; font-family: 宋体;">层和组件</span>,Business<span style="background-color: inherit; font-family: 宋体;">层和组件</span>,<span style="background-color: inherit; font-family: 宋体;">企业信息系统</span>(EIS)<span style="background-color: inherit; font-family: 宋体;">层。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>3.J2EE<span style="background-color: inherit; font-family: 宋体;">是技术还是平台还是框架？</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：</span>J2EE<span style="background-color: inherit; font-family: 宋体;">本身是一个标准，一个为企业分布式应用的开发提供的标准平台。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    J2EE<span style="background-color: inherit; font-family: 宋体;">也是一个框架，包括</span>JDBC<span style="background-color: inherit; font-family: 宋体;">、</span>JNDI<span style="background-color: inherit; font-family: 宋体;">、</span>RMI<span style="background-color: inherit; font-family: 宋体;">、</span>JMS<span style="background-color: inherit; font-family: 宋体;">、</span>EJB<span style="background-color: inherit; font-family: 宋体;">、</span>JTA<span style="background-color: inherit; font-family: 宋体;">等技术。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>4.STRUTS<span style="background-color: inherit; font-family: 宋体;">的应用</span>(<span style="background-color: inherit; font-family: 宋体;">如</span>STRUTS<span style="background-color: inherit; font-family: 宋体;">架构</span>)</strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：</span>Struts<span style="background-color: inherit; font-family: 宋体;">是采用</span>Java Servlet/JavaServer Pages<span style="background-color: inherit; font-family: 宋体;">技术，开发</span>Web<span style="background-color: inherit; font-family: 宋体;">应用程序的开放源码的</span>framework<span style="background-color: inherit; font-family: 宋体;">。</span><span style="background-color: inherit; font-family: 宋体;">采用</span>Struts<span style="background-color: inherit; font-family: 宋体;">能开发出基于</span>MVC(Model-View-Controller)<span style="background-color: inherit; font-family: 宋体;">设计模式的应用构架。</span>&nbsp;Struts<span style="background-color: inherit; font-family: 宋体;">有如下的主要功能：</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong><span style="background-color: inherit; font-family: 宋体;">一</span>.<span style="background-color: inherit; font-family: 宋体;">包含一个</span>controller servlet<span style="background-color: inherit; font-family: 宋体;">，能将用户的请求发送到相应的</span>Action<span style="background-color: inherit; font-family: 宋体;">对象。</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>&nbsp;</strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong><span style="background-color: inherit; font-family: 宋体;">二</span>.JSP<span style="background-color: inherit; font-family: 宋体;">自由</span>tag<span style="background-color: inherit; font-family: 宋体;">库，并且在</span>controller servlet<span style="background-color: inherit; font-family: 宋体;">中提供关联支持，帮助开发员创建交互式表单应用。</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong><span style="background-color: inherit; font-family: 宋体;">三</span>.<span style="background-color: inherit; font-family: 宋体;">提供了一系列实用对象：</span>XML<span style="background-color: inherit; font-family: 宋体;">处理、通过</span>Java reflection APIs<span style="background-color: inherit; font-family: 宋体;">自动处理</span>JavaBeans<span style="background-color: inherit; font-family: 宋体;">属性、国际化的提示和消息。</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>5.WEB SERVICE<span style="background-color: inherit; font-family: 宋体;">名词解释。</span>JSWDL<span style="background-color: inherit; font-family: 宋体;">开发包的介绍。</span>JAXP<span style="background-color: inherit; font-family: 宋体;">、</span>JAXM<span style="background-color: inherit; font-family: 宋体;">的解释。</span>SOAP<span style="background-color: inherit; font-family: 宋体;">、</span>UDDI,WSDL<span style="background-color: inherit; font-family: 宋体;">解释。</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：</span>Web ServiceWeb Service<span style="background-color: inherit; font-family: 宋体;">是基于网络的、分布式的模块化组件，它执行特定的任务，遵守具体的技术规范，这些规范使得</span>Web Service<span style="background-color: inherit; font-family: 宋体;">能与其他兼容的组件进行互操作。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    JAXP(Java API for XML Parsing)&nbsp;<span style="background-color: inherit; font-family: 宋体;">定义了在</span>Java<span style="background-color: inherit; font-family: 宋体;">中使用</span>DOM, SAX, XSLT<span style="background-color: inherit; font-family: 宋体;">的通用的接口。这样在你的程序中你只要使用这些通用的接口，当你需要改变具体的实现时候也不需要修改代码。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    JAXM(Java API for XML Messaging)&nbsp;<span style="background-color: inherit; font-family: 宋体;">是为</span>SOAP<span style="background-color: inherit; font-family: 宋体;">通信提供访问方法和传输机制的</span>API<span style="background-color: inherit; font-family: 宋体;">。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    WSDL<span style="background-color: inherit; font-family: 宋体;">是一种</span>&nbsp;XML&nbsp;<span style="background-color: inherit; font-family: 宋体;">格式，用于将网络服务描述为一组端点，这些端点对包含面向文档信息或面向过程信息的消息进行操作。这种格式首先对操作和消息进行抽象描述，然后将其绑定到具体的网络协议和消息格式上以定义端点。相关的具体端点即组合成为抽象端点（服务）。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    SOAP<span style="background-color: inherit; font-family: 宋体;">即简单对象访问协议</span>(Simple Object Access Protocol)<span style="background-color: inherit; font-family: 宋体;">，它是用于交换</span>XML<span style="background-color: inherit; font-family: 宋体;">编码信息的轻量级协议。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    UDDI&nbsp;<span style="background-color: inherit; font-family: 宋体;">的目的是为电子商务建立标准；</span>UDDI<span style="background-color: inherit; font-family: 宋体;">是一套基于</span>Web<span style="background-color: inherit; font-family: 宋体;">的、分布式的、为</span>Web Service<span style="background-color: inherit; font-family: 宋体;">提供的、信息注册中心的实现标准规范，同时也包含一组使企业能将自身提供的</span>Web Service<span style="background-color: inherit; font-family: 宋体;">注册，以使别的企业能够发现的访问协议的实现标准。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>6.C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">与</span>&nbsp;B/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">区别：</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：有如下八个方面的不同：</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    (1)<span style="background-color: inherit; font-family: 宋体;">硬件环境不同</span>:
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">一般建立在专用的网络上</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">小范围里的网络环境</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">局域网之间再通过专门服务器提供连接和数据交换服务</span>.
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>B/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">建立在广域网之上的</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">不必是专门的网络硬件环境</span>,<span style="background-color: inherit; font-family: 宋体;">例与电话上网</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">租用设备</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">信息自己管理</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">有比</span>C/S<span style="background-color: inherit; font-family: 宋体;">更强的适应范围</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">一般只要有操作系统和浏览器就行</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>(2)<span style="background-color: inherit; font-family: 宋体;">对安全要求不同</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">一般面向相对固定的用户群</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">对信息安全的控制能力很强</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">一般高度机密的信息系统采用</span>C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">结构适宜</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">可以通过</span>B/S<span style="background-color: inherit; font-family: 宋体;">发布部分可公开信息</span>.
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>B/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">建立在广域网之上</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">对安全的控制能力相对弱</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">可能面向不可知的用户。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>(<span style="background-color: inherit; font-family: 宋体;">３</span>)<span style="background-color: inherit; font-family: 宋体;">对程序架构不同</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">程序可以更加注重流程</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">可以对权限多层次校验</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">对系统运行速度可以较少考虑</span>.
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>B/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">对安全以及访问速度的多重的考虑</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">建立在需要更加优化的基础之上</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">比</span>C/S<span style="background-color: inherit; font-family: 宋体;">有更高的要求</span>B/S<span style="background-color: inherit; font-family: 宋体;">结构的程序架构是发展的趋势</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">从</span>MS<span style="background-color: inherit; font-family: 宋体;">的</span>.Net<span style="background-color: inherit; font-family: 宋体;">系列的</span>BizTalk 2000 Exchange 2000<span style="background-color: inherit; font-family: 宋体;">等</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">全面支持网络的构件搭建的系统</span>. SUN&nbsp;<span style="background-color: inherit; font-family: 宋体;">和</span>IBM<span style="background-color: inherit; font-family: 宋体;">推的</span>JavaBean&nbsp;<span style="background-color: inherit; font-family: 宋体;">构件技术等</span>,<span style="background-color: inherit; font-family: 宋体;">使</span>&nbsp;B/S<span style="background-color: inherit; font-family: 宋体;">更加成熟</span>.
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>(<span style="background-color: inherit; font-family: 宋体;">４</span>)<span style="background-color: inherit; font-family: 宋体;">软件重用不同</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">程序可以不可避免的整体性考虑</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">构件的重用性不如在</span>B/S<span style="background-color: inherit; font-family: 宋体;">要求下的构件的重用性好</span>.
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>B/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">对的多重结构</span>,<span style="background-color: inherit; font-family: 宋体;">要求构件相对独立的功能</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">能够相对较好的重用</span>.<span style="background-color: inherit; font-family: 宋体;">就入买来的餐桌可以再利用</span>,<span style="background-color: inherit; font-family: 宋体;">而不是做在墙上的石头桌子</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>(<span style="background-color: inherit; font-family: 宋体;">５</span>)<span style="background-color: inherit; font-family: 宋体;">系统维护不同</span>&nbsp;</strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">程序由于整体性</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">必须整体考察</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">处理出现的问题以及系统升级</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">升级难</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">可能是再做一个全新的系统</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>B/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">构件组成</span>,<span style="background-color: inherit; font-family: 宋体;">方面构件个别的更换</span>,<span style="background-color: inherit; font-family: 宋体;">实现系统的无缝升级</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">系统维护开销减到最小</span>.<span style="background-color: inherit; font-family: 宋体;">用户从网上自己下载安装就可以实现升级</span>.
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>(<span style="background-color: inherit; font-family: 宋体;">６</span>)<span style="background-color: inherit; font-family: 宋体;">处理问题不同</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">程序可以处理用户面固定</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">并且在相同区域</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">安全要求高需求</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">与操作系统相关</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">应该都是相同的系统</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>B/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">建立在广域网上</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">面向不同的用户群</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">分散地域</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">这是</span>C/S<span style="background-color: inherit; font-family: 宋体;">无法作到的</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">与操作系统平台关系最小</span>.
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>(<span style="background-color: inherit; font-family: 宋体;">７</span>)<span style="background-color: inherit; font-family: 宋体;">用户接口不同</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">多是建立的</span>Window<span style="background-color: inherit; font-family: 宋体;">平台上</span>,<span style="background-color: inherit; font-family: 宋体;">表现方法有限</span>,<span style="background-color: inherit; font-family: 宋体;">对程序员普遍要求较高</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>B/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">建立在浏览器上</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">有更加丰富和生动的表现方式与用户交流</span>.&nbsp;<span style="background-color: inherit; font-family: 宋体;">并且大部分难度减低</span>,<span style="background-color: inherit; font-family: 宋体;">减低开发成本</span>.
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>(<span style="background-color: inherit; font-family: 宋体;">８</span>)<span style="background-color: inherit; font-family: 宋体;">信息流不同</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>C/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">程序一般是典型的中央集权的机械式处理</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">交互性相对低</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;"></span>B/S&nbsp;<span style="background-color: inherit; font-family: 宋体;">信息流向可变化</span>, B-B B-C B-G<span style="background-color: inherit; font-family: 宋体;">等信息、流向的变化</span>,&nbsp;<span style="background-color: inherit; font-family: 宋体;">更像交易中心。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>7.<span style="background-color: inherit; font-family: 宋体;">什么是</span>JNDI</strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：（</span>Java Naming &amp; Directory Interface<span style="background-color: inherit; font-family: 宋体;">）</span>JAVA<span style="background-color: inherit; font-family: 宋体;">命名目录服务。主要提供的功能是：提供一个目录系统，让其它各地的应用程序在其上面留下自己的索引，从而满足快速查找和定位分布式应用程序的功能。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>8.<span style="background-color: inherit; font-family: 宋体;">什么是</span>JMS</strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：（</span>Java Message Service<span style="background-color: inherit; font-family: 宋体;">）</span>JAVA<span style="background-color: inherit; font-family: 宋体;">消息服务。主要实现各个应用程序之间的通讯。包括点对点和广播</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>9.<span style="background-color: inherit; font-family: 宋体;">什么是</span>JTA</strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：（</span>Java Transaction API<span style="background-color: inherit; font-family: 宋体;">）</span>JAVA<span style="background-color: inherit; font-family: 宋体;">事务服务。提供各种分布式事务服务。应用程序只需调用其提供的接口即可。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>10.<span style="background-color: inherit; font-family: 宋体;">开发中都用到了那些设计模式</span>?<span style="background-color: inherit; font-family: 宋体;">用在什么场合</span>?</strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：每个模式都描述了一个在我们的环境中不断出现的问题，然后描述了该问题的解决方案的核心。通过这种方式，你可以无数次地使用那些已有的解决方案，无需在重复相同的工作。主要用到了</span>MVC<span style="background-color: inherit; font-family: 宋体;">的设计模式。用来开发</span>JSP/Servlet<span style="background-color: inherit; font-family: 宋体;">或者</span>J2EE<span style="background-color: inherit; font-family: 宋体;">的相关应用。简单工厂模式等。</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>11.<span style="background-color: inherit; font-family: 宋体;">、</span>j2ee<span style="background-color: inherit; font-family: 宋体;">常用的设计模式？说明工厂模式。</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：</span>Java<span style="background-color: inherit; font-family: 宋体;">中的</span>23<span style="background-color: inherit; font-family: 宋体;">种设计模式：</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    Factory<span style="background-color: inherit; font-family: 宋体;">（工厂模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Builder<span style="background-color: inherit; font-family: 宋体;">（建造模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory Method<span style="background-color: inherit; font-family: 宋体;">（工厂方法模式），</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    Prototype<span style="background-color: inherit; font-family: 宋体;">（原始模型模式），</span>Singleton<span style="background-color: inherit; font-family: 宋体;">（单例模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;Facade<span style="background-color: inherit; font-family: 宋体;">（门面模式），</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    Adapter<span style="background-color: inherit; font-family: 宋体;">（适配器模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;Bridge<span style="background-color: inherit; font-family: 宋体;">（桥梁模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite<span style="background-color: inherit; font-family: 宋体;">（合成模式），</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    Decorator<span style="background-color: inherit; font-family: 宋体;">（装饰模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;Flyweight<span style="background-color: inherit; font-family: 宋体;">（享元模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proxy<span style="background-color: inherit; font-family: 宋体;">（代理模式），</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    Command<span style="background-color: inherit; font-family: 宋体;">（命令模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interpreter<span style="background-color: inherit; font-family: 宋体;">（解释器模式），</span>&nbsp;Visitor<span style="background-color: inherit; font-family: 宋体;">（访问者模式），</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    Iterator<span style="background-color: inherit; font-family: 宋体;">（迭代子模式），</span>&nbsp;&nbsp;&nbsp;Mediator<span style="background-color: inherit; font-family: 宋体;">（调停者模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;Memento<span style="background-color: inherit; font-family: 宋体;">（备忘录模式），</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    Observer<span style="background-color: inherit; font-family: 宋体;">（观察者模式），</span>&nbsp;&nbsp;&nbsp;State<span style="background-color: inherit; font-family: 宋体;">（状态模式），</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategy<span style="background-color: inherit; font-family: 宋体;">（策略模式），</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    Template Method<span style="background-color: inherit; font-family: 宋体;">（模板方法模式），</span>&nbsp;Chain Of Responsibleity<span style="background-color: inherit; font-family: 宋体;">（责任链模式）</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">工厂模式：<strong>工厂模式是一种经常被使用到的模式，根据工厂模式实现的类可以根据提供的数据生成一组类中某一个类的实例，通常这一组类有一个公共的抽象父类并且实现了相同的方法，但是这些方法针对不同的数据进行了不同的操作。首先需要定义一个基类，该类的子类通过不同的方法实现了基类中的方法。然后需要定义一个工厂类，工厂类可以根据条件生成不同的子类实例。当得到子类的实例后，开发人员可以调用基类中的方法而不必考虑到底返回的是哪一个子类的实例。</strong></span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>12.UML<span style="background-color: inherit; font-family: 宋体;">方面</span></strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <span style="background-color: inherit; font-family: 宋体;">答：标准建模语言</span>UML<span style="background-color: inherit; font-family: 宋体;">。用例图</span>,<span style="background-color: inherit; font-family: 宋体;">静态图</span>(<span style="background-color: inherit; font-family: 宋体;">包括类图、对象图和包图</span>),<span style="background-color: inherit; font-family: 宋体;">行为图</span>,<span style="background-color: inherit; font-family: 宋体;">交互图</span>(<span style="background-color: inherit; font-family: 宋体;">顺序图</span>,<span style="background-color: inherit; font-family: 宋体;">合作图</span>),<span style="background-color: inherit; font-family: 宋体;">实现图</span>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    <strong>13.RMI</strong>
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    &nbsp;
+</p>
+<p style="font-family: 微软雅黑; white-space: normal; color: rgb(98, 99, 102); font-size: 13px; line-height: 24px; background-color: rgb(255, 255, 255);">
+    RMI&nbsp;<span style="background-color: inherit; font-family: 宋体;">指的是远程方法调用</span>&nbsp;(Remote Method Invocation)<span style="background-color: inherit; font-family: 宋体;">。它是一种机制，能够让在某个</span>&nbsp;Java&nbsp;<span style="background-color: inherit; font-family: 宋体;">虚拟机上的对象调用另一个</span>&nbsp;Java&nbsp;<span style="background-color: inherit; font-family: 宋体;">虚拟机中的对象上的方法。可以用此方法调用的任何对象必须实现该远程接口。调用这样一个对象时，其参数为</span>&nbsp;&quot;marshalled&quot;&nbsp;<span style="background-color: inherit; font-family: 宋体;">并将其从本地虚拟机发送到远程虚拟机（该远程虚拟机的参数为</span>&nbsp;&quot;unmarshalled&quot;<span style="background-color: inherit; font-family: 宋体;">）上。该方法终止时，将编组来自远程机的结果并将结果发送到调用方的虚拟机。如果方法调用导致抛出异常，则该异常将指示给调用方。</span>
+</p>
+<p>
+    <br/>
+</p>
+      </section>
+       
+      
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="http://ajunboys.github.io">X-Zone</a> is maintained by <a href="mailto:weijunqiang2010@foxmail.com">Jason(JUNQIANG.WEI)</a>.</span>
+
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
